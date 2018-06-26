@@ -1,0 +1,36 @@
+<script>
+	let paises = [
+		{nome:'Brasil',pontos: 45, jogos: 5},
+		{nome:'EUA',pontos: 32, jogos: 3},
+		{nome:'China',pontos: 15, jogos: 2},
+		{nome:'Russia',pontos: 3, jogos: 5},
+		{nome:'Alemanha',pontos: 97, jogos: 5}
+	];
+
+	var pontos = paises.map(dt => dt.pontos);
+	console.log(pontos)
+
+	var totalp = pontos.reduce((total,atual) => total+atual);
+
+	console.log(totalp);
+
+	var jogos = paises.map(dt =>dt.jogos);
+	console.log(jogos)
+
+	var totalj = jogos.reduce((total,atual) => total+atual);
+	console.log(totalj)
+
+
+	var vp = 0;
+	var vn = "";
+
+	paises.filter(ps => {
+		if(ps.pontos > vp) {
+			vp = ps.pontos;
+			vn = ps.nome;
+		}
+	})
+	console.log(vn);
+
+
+</script>

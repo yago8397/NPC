@@ -1,0 +1,11 @@
+<script>
+	var dtnascimento = [1983,1990,1997];
+	var idades = dtnascimento.map(function(dt){ /*function map atribui variavel dtnascimento em "dt" */
+		return 2018 - dt;
+		});
+	console.log(idades);
+
+
+	var idades = dtnascimento.map(dt => 2018-dt); /*transforma em arrow function*/
+	console.log(idades)
+</script>

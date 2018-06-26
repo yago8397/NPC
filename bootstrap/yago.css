@@ -1,0 +1,42 @@
+@media screen and (min-width: 960px){
+
+.impar .texto, .par .texto{
+	float: right;
+	text-indent: 25px;
+}
+.logo{
+	margin-top: 50%;
+}
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px){
+
+.logo{
+	margin-top: 50%;
+}	
+
+figure{
+	display: block !important; 
+}
+.impar figure{
+	float: left;
+}
+.par figure{
+	float: right;
+}
+.impar, .par{
+	flex: auto !important;
+	display: block;
+	max-width: 100% !important;
+}
+
+.impar div{
+	float: left;
+	text-indent: 25px;
+}
+.par div{
+	float: right;
+	text-indent: 25px;
+}
+
+}

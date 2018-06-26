@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script>
+		function teste(y){
+			x = document.getElementById("senha").value;
+			if(x != y){
+				alert("As senhas não conferem!");
+				document.getElementById("senha").value ="";
+				document.getElementById("csenha").value ="";
+				document.getElementById("senha").focus();
+			}
+
+		}	
+		$(document).ready(function(){
+			$("#botao2").hide();
+			$("#botao").click(function(){
+				document.getElementById("senha").type = "text";
+				$("#botao").hide();
+				$("#botao2").fadeIn(2000);
+			});
+			$("#botao2").click(function(){
+				document.getElementById("senha").type = "password";
+				$("#botao2").hide();
+				$("#botao").fadeIn(2000);
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<h1>Cadastro de usuário</h1>
+		<div class="form-group">
+			<label>senha </label>
+			<input type="password" class="form-control" id="senha">
+			<button class="btn btn-primary" onclick="teste2()" id="botao"> ver senha</button><button class="btn btn-primary" onclick="teste2()" id="botao2"> esconder senha</button>
+		</div>
+		<div class="form-group">confirmar senha <input type="password" id="csenha" onblur="teste(this.value)" class="form-control"></div>
+		<div class="form-group">Endereco <input class="form-control" type="text" id="endereco"></div>
+
+	</div>
+</body>
+</html>

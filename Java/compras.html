@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Compras</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" language="javascript1.5">
+	
+	
+			tipoProduto = prompt("Escolha um tipo de produto (tênis ou camisa)", "camisa ou tênis")
+
+			tipoProduto = tipoProduto.toLowerCase()
+	
+		
+	
+	if (tipoProduto=="tênis" || tipoProduto=="tenis"){
+		
+		tamanho=prompt("Escolha o tamanho(38, 40, 42 ou 44):")
+	
+		switch(tamanho){
+				
+			case "38":
+			valor = 250-(250*0.10)
+			alert("Valor = " + valor)
+			break
+			
+			case "40":
+			valor = 250
+			alert("Valor = " + valor)
+			break
+			
+			case "42":
+			valor = 250
+			alert("Valor = " + valor)
+			break
+			
+			case "44":
+			valor = 250
+			alert("Valor = " + valor)
+			break
+			
+			default:
+			alert("Opção inválida!")
+		}
+		
+		
+		
+		
+		
+	}else if(tipoProduto=="camisa"){
+		tamanho=prompt("Escolha o tamanho(P, M, G ou GG):")
+		
+		
+		if(tamanho=="GG"){
+			
+		valor = 150 -(150*0.10)
+		alert("O valor a pagar = " + valor)
+					
+		}else if(tamanho=="P" || tamanho=="M" || tamanho =="G"){
+		
+			valor = 150
+		
+		alert("O valor a pagar = " + valor)
+		}
+		
+		
+	}else{
+		
+		alert("Escolha entre camisa ou tênis! ")
+		
+		
+	}
+
+		</script>
+		
+
+	</head>
+	<body>
+
+	</body>
+	</html>

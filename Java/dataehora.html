@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Data e Hora</title>
+	<script type="text/javascript" language="javascript1.5">
+	    function mostrarDataHora() {
+	    	var d = new Date(); // intanciar o objeto
+	        
+	    	var dataCorrente = recuperarData(d); //chama a função recuperarData e passa as informações do objeto d completa, na função separa a data da hora, volta e guarda em dataCorrente.
+	    	var horaCorrente = recuperarHora(d); //chama a função recuperarHora e passa as informações do objeto d completa. Na função recuperarHora separar a hora, volta e guar em horaCorrente.
+	    	
+	    	document.getElementById("txtData").value = dataCorrente;
+	    	document.getElementById("txtHora").value = horaCorrente;
+	    }
+	    
+	    function recuperarData(dataCorrente) { //Os dados de d são passados completos para dataCorrente
+	        var dia = dataCorrente.getDate(); //separa o dia
+	        var mes = dataCorrente.getMonth() +1; //separa o mês
+	        var ano = dataCorrente.getFullYear(); //separa o ano
+	        
+	        if (mes < 10) {
+	        	mes = "0" + mes;
+	        }
+	        
+	        return (dia + "/" + mes + "/" + ano);
+	    }
+	    
+        function recuperarHora(dataCorrente) {
+    	    var hora = dataCorrente.getHours();
+            var minuto = dataCorrente.getMinutes
+            ();
+            var segundo = dataCorrente.getSeconds();
+            
+            if (hora < 10) {
+            	hora = "0" + hora;
+            }
+            
+            if (minuto < 10) {
+               minuto = "0" + minuto;
+            }
+            
+            return (hora + ":" + minuto + ":" + segundo);
+        }
+
+</script>
+
+    </>
+</head>
+<body>
+    <form name="frmDataHora" action="Sucesso.html">
+        Data:<input type="text" id="txtData" name="txtData" readonly />
+        <br/>
+        Hora:<input type="text" id="txtHora" name="txtHora" readonly />
+        <br/>
+        <br/>
+        <input type="reset" value="Limpar" />
+        <input type="button" value="Mostrar" onclick="mostrarDataHora()" />        
+    </form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.container{
+				max-width: 1000px;
+				margin: 0 auto;
+				border: solid 1px #000;
+				padding: 20px;
+			}
+			.formulario{
+				margin: 15px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="container">
+		<form action="resposta.html" method="post">
+			<div class="formulario">
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome" placeholder="Digite aqui o seu nome" required="" />
+			</div>
+			<div class="formulario">
+				<label for="email">E-mail</label>
+				<input type="email" id="email" required placeholder="Digite o seu e-mail aqui." /> 
+			</div>
+			<div class="formulario">
+				<label for="nota">Nota do site</label>
+				<input type="number" id="nota" required min="0" max="10" step="2" value="10" />
+			</div>
+			<div class="formulario">
+				<label for="datan">Data de Nasciemnto</label>
+				<input type="date" id="datan" required max="2018-02-27" />
+			</div>
+			<div class="formulario">
+				<label for="telefone">Telefone de Cadastro</label>
+				<input type="tel" id="telefone" required />
+			</div>
+			<div class="formulario">
+				<label for="uf">Unidade Federativa</label>
+				<input type="text" id="uf" maxlength="2" list="estados" />
+				<datalist id="estados">
+					<option value="RJ">
+					<option value="SP">
+					<option value="MG">
+					<option value="ES">
+				</datalist>
+			</div>
+			<div class="formulario">
+				<label for="estadocivil">Estado Civil</label>
+				<select id="estadocivil">
+					<option>Solteiro</option>
+					<option selected>Casado</option>
+					<option>Divorciado</option>
+					<option>Viúvo</option>
+				</select>
+			</div>
+			<div class="formulario">
+				<label>Sexo</label>
+				<input type="radio" name="sexo" id="masc"><label for="masc">Masculino</label>
+				<input type="radio" name="sexo" id="femi"><label for="femi">Feminino</label>
+			</div>
+			<div class="formulario">
+				<label>Estilo perfeito de filmes:</label>
+				<input type="checkbox" id="humor" checked><label for="humor">Comédia</label>
+				<input type="checkbox" id="romance"><label for="romance">Romance</label>
+				<input type="checkbox" id="terror"><label for="terror">Terror</label>
+			</div>
+			<button type="submit">Enviar</button>
+		</form>
+		</div>
+	</body>
+	</html>

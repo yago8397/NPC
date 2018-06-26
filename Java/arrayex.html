@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Media Array</title>
+		<script type="text/javascript" language="javascript1.5">
+			var nome = new Array(3)
+			var nota1 = new Array(3)
+			var nota2 = new Array(3)
+			var media = new Array(3)
+
+			for(i=0; i<3; i++){
+				nome[i]=prompt("Digite seu nome aqui:")
+			}
+
+			for(i=0; i<3; i++){
+				nota1[i]=prompt(nome[i]+" digite sua 1º nota:")
+
+				nota1[i]= parseFloat(nota1[i])
+			}
+
+			for(i=0;i<3;i++){
+				nota2[i]=prompt(nome[i]+" digite sua 2º nota:")
+
+				nota2[i]= parseFloat(nota2[i])
+			}
+			
+			for(i=0; i<3; i++){	
+
+				media[i]= parseFloat(media[i])			
+
+				media[i]=(nota1[i]+nota2[i])/2
+
+				document.write("O aluno "+nome[i]+" ficou com a média "+ media[i]+".</br>")
+
+				alert("O aluno "+nome[i]+" ficou com a média "+ media[i]+".")
+
+			}
+			
+		</script>
+	</head>
+	<body>
+
+	</body>
+	</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Nível Games</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1 class="titulo">Nível Games</h1>
+			</header>
+			<nav class="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="consoles.html">Consoles</a></li>
+					<li><a href="jogos.html">Jogos</a></li>
+					<li><a href="multimidia.html">Multimídia</a></li>
+					<li><a href="contato.html">Contato</a></li>
+					<li><a href="horario.html">Horário</a></li>
+					<li><a href="comochegar.html">Como Chegar</a></li>
+					<li><a href="http://google.com" target="_blank">Google</a></li>
+				</ul>
+			</nav>
+			<section>
+				<img src="imagens/banner.jpg">
+				<h1 class="th">Contatos</h1>
+				<hr />
+				<form>
+					<fieldset class="grupo">
+						<legend>Dados pessoais</legend>
+						<div class="formulario">
+							<label for="nome" class="esquerda">Nome:</label>
+							<input type="text" id="nome" class="direita">						
+						</div>
+						<div class="formulario">
+							<label for="email" class="esquerda">E-mail:</label>
+							<input type="email" id="email" class="direita">						
+						</div>
+						<div class="formulario">
+							<label for="idade" class="esquerda">Idade:</label>
+							<input type="number" id="idade" min="10" max="100" class="direita">						
+						</div>
+						<div class="formulario">
+							<label for="telefone" class="esquerda">Telefone:</label>
+							<input type="tel" id="telefone" class="direita">						
+						</div>
+						<div class="formulario">
+							<label class="esquerda">Sexo:</label>
+							<div class="direita">
+							<input type="radio" name="sexo" id="masc">
+							<label for="masc">Masculino</label>
+							<input type="radio" name="sexo" id="femi">
+							<label for="femi">Feminino</label>				
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="grupo">
+						<legend>Assunto</legend>
+						<div class="formulario">
+							<label for="assunto" class="esquerda">Assusnto:</label>
+							<select id="assunto" class="direita">
+								<option disabled selected>Escolha sua opção</option>
+								<option>Criticas</option>
+								<option>Sugestões</option>
+								<option>Compras</option>
+								<option>Outros</option>
+							</select>
+						<div class="formulario">
+							<label for="mensagem" class="esquerda">Mensagem:</label>
+							<textarea id="mensagem" class="direita" rows="6"></textarea>
+						</div>					
+					</fieldset>
+					<button class="bnt" type="submit">Enviar Dados</button>
+				</form>
+			</section>
+			<footer>
+				Avenida das Américas, 5000
+			</footer>
+		</div>
+	</body>
+</html>

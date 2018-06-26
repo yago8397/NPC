@@ -1,0 +1,241 @@
+@media screen and (max-width: 320px){
+	.menu ul{
+		list-style: none;
+	}
+	.menu ul li{
+		display: inline;
+		text-transform: uppercase;
+	}
+	.menu ul li a{
+		text-decoration: none;
+		color: #222;
+		padding: 10px;
+		border-bottom: #33c solid 3px;
+		display: inline-block;
+		
+	}
+	.menu ul li a:hover{
+		color:#fff;
+		background-color: #44f;
+	}
+
+	.capa{
+		float: left;
+	}
+	.img1{
+		width: 100%;
+		margin: 0px;
+		padding: 0.7%;
+	}
+
+	.img2{
+		width: 100%;
+		float: left;
+		margin: 0px;
+		padding: 0.7%;
+
+	}
+	.img3{
+		width: 100%;
+		float: right;
+		margin: 0px;
+		padding: 0.7%;
+	}
+	.text1{
+		border: solid;
+		margin: 0px
+		padding: 0px;
+		background-color: #000;
+		color: #fff;
+	}
+	.sharinga{
+		width: 100%;
+		height: 25%;
+		margin: 0px;
+		padding: 0.7%;
+	}
+	.hokage{
+		display: none;
+		width: 100%;
+		display: none;
+	}
+	footer{
+	border-bottom: 2px solid #000;
+	border-top: 2px solid #000;
+	margin: 30px 0;
+	text-align: center;
+	padding: 10px;
+	display: none;
+	}
+	p{
+		display: none;
+	}
+	.banner{
+		display: none;
+	}
+	.menu{
+		display: none;
+	}
+}
+@media screen and (min-width: 321px) and (max-width: 768px){
+	.menu ul{
+		list-style: none;
+	}
+	.menu ul li{
+		display: inline;
+		text-transform: uppercase;
+	}
+	.menu ul li a{
+		text-decoration: none;
+		color: #222;
+		padding: 10px;
+		border-bottom: #33c solid 3px;
+		display: inline-block;
+		
+	}
+	.menu ul li a:hover{
+		color:#fff;
+		background-color: #44f;
+	}
+
+	.capa{
+		width: 100%;
+		float: left;
+	}
+
+	.img2{
+		width: 33%;
+		float: left;
+		margin: 0px;
+		padding: 0.7%;
+	}
+	.img3{
+		width: 33%;
+		float: right;
+		margin: 0px;
+		padding: 0.7%;
+	}
+	.text1{
+		border: solid;
+		margin: 0px
+		padding: 0px;
+		background-color: #000;
+		color: #fff;
+	}
+	.sharinga{
+		width: 25%;
+		height: 25%;
+		display: inline-block;
+	}
+	.hokage{
+		display: none;
+		width: 100%;
+	}
+	footer{
+	border-bottom: 2px solid #000;
+	border-top: 2px solid #000;
+	margin: 30px 0;
+	text-align: center;
+	padding: 10px;
+	}
+	.img1{
+		width: 25%;
+		margin: 0px;
+		padding: 0.7%;
+	}
+	.banner{
+		width: 70%;
+		margin: 0px;
+		padding: 0.7%;
+	}
+	form{
+		display: none;
+	}
+	.contato{
+		display: none;
+	}
+}
+@media screen and (min-width: 769px){
+	.menu ul{
+		list-style: none;
+	}
+	.menu ul li{
+		display: inline;
+		text-transform: uppercase;
+	}
+	.menu ul li a{
+		text-decoration: none;
+		color: #222;
+		padding: 10px;
+		border-bottom: #33c solid 3px;
+		display: inline-block;
+		list-style:
+		
+	}
+	.menu ul li a:hover{
+		color:#fff;
+		background-color: #44f;
+	}
+	.container{
+		margin: 0 auto;
+		max-width: 960px;
+
+		
+	}
+	.img2{
+		width: 33%;
+		float: left;
+		margin: 0px;
+		padding: 0.7%;
+	}
+	.img3{
+		width: 33%;
+		float: right;
+		margin: 0px;
+		padding: 0.7%;
+	}
+	.text1{
+		border: solid;
+		margin: 0px
+		padding: 0px;
+		float: right;
+		background-color: #000;
+		color: #fff;
+	}
+	.sharinga{
+		width: 25%;
+		height: 25%;
+	}
+	.hokage{
+		width: 100%;
+	}
+	footer{
+		border-bottom: 2px solid #000;
+		border-top: 2px solid #000;
+		margin: 30px 0;
+		text-align: center;
+		padding: 10px;
+	}
+
+	form{
+		display: inline-block;
+		width: 46%;
+	}
+
+	input{
+		background-color: #aaa;
+		color:#000;
+		margin: 10px auto;
+		font-weight: bold;
+		padding: 6px 35px;
+		border-radius: 10px;
+		border: solid;
+		margin-left: 8px;
+	}
+
+	input:hover{
+		background-color: #000;
+		color: #fff;
+	}
+	.
+}

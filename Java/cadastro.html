@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cadastro</title>
+		<script type="text/javascript" language="javascript1.5">
+
+			function validarDados(){
+
+				var nome = menu_formulario.nome.value
+				var sobrenome = menu_formulario.sobrenome.value
+				var senha = menu_formulario.senha.value
+				var mensagem = menu_formulario.mensagem.value
+				var sexo = menu_formulario.sexo
+				var csenha = menu_formulario.csenha.value
+				// Verificar se os campos textos foram preenchidos.
+
+				if (nome == "" || sobrenome == "" || senha == "" || mensagem == "" || csenha == ""){
+
+					alert("Preencha os campos de textos!")
+				}
+
+				//Validar campos radio, usando variável para verificar a marcação.
+
+				var marcados = false
+
+				//Verificar os campos rádio.
+
+				for(var i=0; i<sexo.length; i++){
+
+					if(sexo[i].checked){
+
+						marcados=true;
+					}
+				}
+
+				//Formata a mensagem para o resultado.
+
+				if(!marcados){
+
+					alert("Selecione seu sexo!")
+					return false;
+				}
+				if(senha!=csenha)
+
+					alert("Confirmação de senha invalido!")
+			}
+
+		</script>
+	</head>
+	<body>
+		<form id="menu_formulario" action="" method="post">
+
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" width="480px" required> <br>
+
+		<label for="sobrenome">Sobrenome:</label>
+		<input type="text" name="sobrenome" id="sobrenome" width="480px" required> <br> 
+
+		<label for="senha">Senha:</label>
+		<input type="password" name="senha" id="senha" maxlength="8" width="480px" required> <br>
+
+		<label for="csenha">Comfirma Senha:</label>
+		<input type="password" name="csenha" id="csenha" maxlength="8" width="480px" required> <br><br>
+
+		<label for="sexo">Sexo:</label> <br>
+		<label for="m">Masculino</label><input type="radio" name="sexo" id="sexo" value="m">  
+		<label for="f">Feminino</label><input type="radio" name="sexo" id="sexo" value="f">  <br><br>
+
+		<label for="opcoes">Opções:</label>
+
+		<select name="opcoes" id="opcoes"> <br>
+			
+			<option value="opcao1">Opção1</option> 
+			<option value="opcao2">Opção2</option> 
+
+		</select> <br><br>
+
+		<textarea id="mensagem" name="mensagem"	></textarea> <br>
+
+		<input type="submit" value="Enviar" onClick="validarDados()"> 
+
+		</form>
+
+	</body>
+	</html>

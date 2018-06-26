@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" language="javascript1.5">
+			
+			tamanhovetor = prompt("Digite a quantidade de produtos que deseja cadastrar:")
+
+			tamanho = parseInt(tamanhovetor)
+
+			var produtos = new Array(tamanho)
+
+			alert(produtos.length)
+
+			for (i=0; i<produtos.length; i++){
+				
+				produtos[i] = prompt("Digite o nome do produto")
+
+			}
+			for(i=0; i<produtos.length; i++){
+
+				alert(i+1 +"-" + produtos[i])
+			
+				document.write(i+1 +"-" + produtos[i]+"<br>")
+			}
+
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+	</html>

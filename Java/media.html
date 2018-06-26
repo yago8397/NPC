@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Verificando dados</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" language="javascript1.5">
+			alert("Verificar a situação do aluno")
+			nome=prompt("Digite seu nome", "Aluno")
+
+			n1=prompt("Digite a sua primeira nota", "Nota 1")
+			
+			n2=prompt("Digite a sua primeira nota", "Nota 2")
+			n1c=parseFloat(n1)
+			n2c=parseFloat(n2)
+			
+			media=(n1c+n2c)/2
+			alert(media)
+
+			if (media >=7) {
+				alert("Aprovado")
+			}
+			else if(media<4){
+				alert("Reprovado")
+			}
+			else{
+				alert("Recuperação")
+			}
+			resposta=prompt("Deseja agendar a recuperação?")
+
+			if (resposta=="s") {
+				opcao=prompt("Escolha uma opção(1, 2 ou 3):")
+				opcaoc=parseInt(opcao)
+			switch(opcaoc){
+				case 1:
+					alert("15/03/2018")
+					break
+				case 2:
+					alert("20/03/2018")
+					break
+				case 3:
+					alert("25/03/2018")
+					break
+				default:
+					alert("Opção Inválida")
+					break	
+				}
+			}
+		</script>
+	</head>
+	<body>
+
+	</body>
+
+</html>

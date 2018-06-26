@@ -1,0 +1,17 @@
+<script>
+
+	let pessoas = [
+	{nome:'juca',idade:27},
+	{nome:'joca',idade:35},
+	{nome:'joelio',idade:25},
+	{nome:'joelma',idade:42},
+];
+
+	var idades = pessoas.filter( ida => {
+		if(ida.idade<30){
+			return ida;
+		}
+	});
+
+console.log(idades)
+</script>

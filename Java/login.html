@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login do Site</title>
+		<script type="text/javascript" language="javascript1.5">
+			function validarDados(){
+
+				var login = menu_formulario.login.value
+				var lsenha = menu_formulario.lsenha.value
+
+				if(login == ""){
+
+					alert("Digite o login.")
+				}
+
+				if(lsenha == ""){
+
+					alert("Digite a senha.")
+				}
+			}
+
+
+		</script>
+	</head>
+	<body>
+		<form id="menu_formulario" action="" method="post">
+			<label for="login">Login:</label>
+			<input type="text" id="login" name="login" width="480px" required> <br>
+
+			<label for="lsenha">Senha:</label>
+			<input type="password" name="lsenha" id="lsenha" maxlength="8" width="480px" required> <br><br>
+
+			<input type="submit" value="Entrar" onClick="validarDados()"> 
+		</form>
+	</body>
+	</html>

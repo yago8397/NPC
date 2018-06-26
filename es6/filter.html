@@ -1,0 +1,21 @@
+<script>
+	var usuarios = [
+	{nome:'juca',sexo:'m'},
+	{nome:'julia',sexo:'f'},
+	{nome:'joana',sexo:'f'}
+];
+var femininos = usuarios.filter( usu => usu.sexo.includes('f') ); /*filtra pelo sexo*/
+console.log(femininos);
+
+
+
+/*de arrow para normal */
+
+var femininos2 = usuarios.filter(function(usu){
+	return usu.sexo.includes('f');
+});
+console.log(femininos2);
+
+
+
+</script>

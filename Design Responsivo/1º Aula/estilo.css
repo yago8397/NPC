@@ -1,0 +1,25 @@
+@media screen and (max-width: 400px){
+	p{
+		color: #F00;
+	}
+}
+@media screen and (min-width: 401px) and (max-width: 600px){
+	p{
+		color: #0f0;
+	}
+	div{
+		width: 48%;
+		float: left;
+		margin: 1%
+	}
+}
+@media screen and (min-width: 601px){
+	p{
+		color: #0ff;
+	}
+	div{
+		width: 30%;
+		float: left;
+		margin:	1%;
+	}
+}

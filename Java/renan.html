@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+	<script type="text/javascript" language="javascript1.5">
+		function validarDados(){
+			var nome=meuFormulario.nome.value
+			var sobrenome=meuFormulario.sobrenome.value
+			var senha=meuFormulario.senha.value
+			var mensagem=meuFormulario.mensagem.value
+			var sexo=meuFormulario.sexo
+			
+			//Verifica se os camps textos foram preenchidos
+			if(nome=="" || sobrenome=="" || senha==""){
+				alert("Preencha os campos de texto")
+			}
+			//Validar campos rádio, usando varíavel para verificar a marcação
+			var marcados=false
+			
+			for(var i=0; i<sexo.length;i++){
+				if(sexo[i].checked){
+					marcados=true
+				}
+			}
+			
+			//Formata a mensagem para o resultado
+			if(!marcados){
+				alert("Selecione seu sexo!")
+				return false
+			}
+
+			if(opcoes.value =="") {
+				alert("Escolha ao menos uma das opções")
+				return false;
+
+			}
+
+			alert("Formulário será enviado e a página será atualizada.")
+				
+		}
+
+	</script>
+	</head>
+
+	<body>
+		<form id="meuFormulario" action="" method="post">
+			<label for="nome">Nome</label>
+			<input type="text" id="nome" name="nome" required></br>
+			
+			<label for="sobrenome">Sobrenome</label>
+			<input type="text" name="sobrenome" id="sobrenome" required></br>
+		
+			<label for="senha">Senha</label>
+			<input type="password" name="senha" id="senha" maxlength="8"> </br>
+			
+			
+			<label for="sexo">Sexo:</label>
+			
+			<label for="m">Masculino</label><input type="radio" name="sexo" id="sexo" value="m">
+			<label for="f">Feminino</label><input type="radio" name="sexo" id="sexo" value="f"></br>
+			
+			<label for="opcoes">Opções</label> </br>
+			
+			<select name="opcoes" id="opcoes">
+
+				<option value="opcao1">Opção 1</option>
+				<option value="opcao2">Opção 2</option>
+				<option value=""></option>
+
+			</select> </br> </br>
+			
+			<textarea  id="mensagem" cols="30" rows="10"></textarea></br>
+			
+			<input type="submit" value="Enviar" onClick="validarDados()"> </br>
+			
+			
+		</form>
+ 
+	</body>
+</html>
